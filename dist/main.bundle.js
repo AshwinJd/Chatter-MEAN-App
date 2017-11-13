@@ -655,7 +655,7 @@ var AuthService = (function () {
     };
     AuthService.prototype.storeUserData = function (token, user) {
         localStorage.setItem('id_token', token);
-        localStorage.setItem('user', JSON.stringify(user));
+        localStorage.setItem('user_val', JSON.stringify(user));
         this.authToken = token;
         this.user = user;
     };
